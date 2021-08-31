@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #2e424a, #375a5e);
+}
+
+header {
+    height: 100vh;
+    border-bottom: 2px solid #fff;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+.header-text {
+    text-align: center;
+    animation: fadeIn linear 2s;
+}
+
+.header-text h1 {
+    font-family: 'Rampart One', cursive;
+    color: #fff;
+    padding: 1rem;
+}
+
+span {
+    display: block;
+}
+
+@media (min-width: 1190px) {
+    .header-par {
+        display: none;
+    }
+}
+
+.phone {
+    position: relative;
+    margin: 0 auto 0;
+    width: 240px;
+    height: 510px;
+    transform: rotate(-4deg);
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: inset 0 0 15px rgba(0,0,0,.2),
+                0 40px 80px rgba(0,0,0,.4);
+}
+
+
+@media (min-width: 1190px) {
+    .phone {
+        margin: 0;
+        left: 200px;
+        width: 270px;
+        height: 540px;
+    }
+}
+
+
+.phone::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: calc(100% - 18px);
+    height: calc(100% - 18px);
+    border-radius: 25px;
+    /* box-shadow: 0 0 20px rgba(0,0,0,.2); */
+    background: url('../images/vicky.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.phone::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    width: 120px;
+    height: 14px;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.header-par {
+    margin-top: 2rem;
+    text-align: center;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0 4rem;
+}
+
+#designs {
+    margin: 1.5rem 0;
+}
+
+#designs h2 {
+    text-align: center;
+    color: #fff;
+}
+
+#designs div {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 5rem;
+    
+    border-radius: 7px;
+}
+
+@media (min-width: 1190px) {
+    #designs div {
+        width: 250px;
+        height: 250px;
+        margin: 0;
+        border-radius: 7px;
+    }
+
+    .designs {
+        position: relative;
+        top: 80px;
+        display: grid;
+        grid-template-areas: 
+            "item1 item2"
+            "item3 item4";
+        gap: 40px;
+    }
+
+    h2 {
+        display: none;
+    }
+
+}
+
+#designs div img {
+    width: 100%;
+}
+
+.designs {
+    text-align: center;
+}
+
+.design1 {
+    background: url('../images/design1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #fff;
+    transform: rotate(-5deg);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.2),
+                0 5px 5px 0 rgba(0,0,0,.4);
+}
+
+.link1 {
+    position: relative;
+    top: 35%;
+    left: 35%;
+    color: gray;
+    display: none;
+}
+
+.link2 {
+    position: relative;
+    top: 35%;
+    left: 35%;
+    color: gray;
+    display: none;
+}
+
+.link3 {
+    position: relative;
+    top: 35%;
+    left: 35%;
+    color: gray;
+    display: none;
+}
+
+.link4 {
+    position: relative;
+    top: 35%;
+    left: 35%;
+    color: gray;
+    display: none;
+}
+
+.link1.active, .link2.active, .link3.active, .link4.active {
+    display: block;
+}
+
+.design2 {
+    background: url('../images/design2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #fff;
+    transform: rotate(5deg);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.2),
+                0 5px 5px 0 rgba(0,0,0,.4);
+}
+
+.design3 {
+    background: url('../images/design3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #fff;
+    transform: rotate(-5deg);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.2),
+                0 5px 5px 0 rgba(0,0,0,.4);
+}
+
+.design4 {
+    background: url('../images/design4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #fff;
+    transform: rotate(5deg);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.2),
+                0 5px 5px 0 rgba(0,0,0,.4);
+}
+
+@media (min-width: 1190px) {
+    .design4 {
+        transform: rotate(-6deg);
+    }
+
+    /* .design3 {
+        transform: rotate(6deg);
+    } */
+
+}
+
+@media (min-width: 1190px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+}
+
