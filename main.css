@@ -153,7 +153,7 @@ span {
 }
 
 .design1 {
-    background: url('../images/design1.jpg');
+    background-image: url('./images/design1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -200,7 +200,7 @@ span {
 }
 
 .design2 {
-    background: url('../images/design2.jpg');
+    background-image: url('./images/design2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -211,7 +211,7 @@ span {
 }
 
 .design3 {
-    background: url('../images/design3.jpg');
+    background-image: url('./images/design3.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -222,7 +222,7 @@ span {
 }
 
 .design4 {
-    background: url('../images/design4.jpg');
+    background-image: url('./images/design4.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
