@@ -74,7 +74,7 @@ span {
     height: calc(100% - 18px);
     border-radius: 25px;
     /* box-shadow: 0 0 20px rgba(0,0,0,.2); */
-    background: url('../images/vicky.jpg');
+    background-image: url('../images/vicky.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
